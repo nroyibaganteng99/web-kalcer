@@ -1,0 +1,235 @@
+.music-page {
+
+    width:
+        min(1100px, calc(100% - 60px));
+
+    margin:
+        70px auto;
+}
+
+
+.music-title h1 {
+
+    font-size:
+        clamp(45px, 8vw, 90px);
+
+    letter-spacing:
+        -5px;
+}
+
+
+.music-title p {
+
+    color:
+        #aaa;
+
+    margin-top:
+        10px;
+}
+
+
+.music-box {
+
+    margin-top:
+        40px;
+
+    padding:
+        35px;
+
+    border-radius:
+        25px;
+
+    background:
+        rgba(0,0,0,.58);
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+}
+
+
+.music-cover {
+
+    min-height:
+        270px;
+
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    padding:
+        30px;
+
+    border-radius:
+        20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,0,0,.25),
+            rgba(0,0,0,.85)
+        );
+}
+
+
+.music-cover small {
+
+    color:
+        #ff2020;
+
+    letter-spacing:
+        3px;
+}
+
+
+.music-cover h2 {
+
+    font-size:
+        clamp(30px, 6vw, 65px);
+
+    line-height:
+        .9;
+
+    margin-top:
+        10px;
+}
+
+
+.music-tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin:
+        20px 0;
+}
+
+
+.music-tags span {
+
+    padding:
+        7px 12px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.15);
+
+    border-radius:
+        20px;
+
+    color:
+        #aaa;
+
+    font-size:
+        9px;
+}
+
+
+.playlist {
+
+    display:
+        grid;
+
+    gap:
+        10px;
+}
+
+
+.song {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    padding:
+        15px;
+
+    border-radius:
+        12px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    border:
+        1px solid transparent;
+
+    transition:
+        .25s;
+}
+
+
+.song:hover {
+
+    border-color:
+        rgba(255,0,0,.4);
+}
+
+
+.song-number {
+
+    color:
+        #ff2020;
+
+    font-size:
+        11px;
+}
+
+
+.song-info strong {
+
+    display:
+        block;
+}
+
+
+.song-info span {
+
+    color:
+        #888;
+
+    font-size:
+        11px;
+}
+
+
+@media (max-width: 600px) {
+
+    .music-page {
+
+        width:
+            calc(100% - 24px);
+
+        margin:
+            45px auto;
+    }
+
+
+    .music-box {
+
+        padding:
+            18px;
+    }
+
+
+    .music-cover {
+
+        min-height:
+            220px;
+
+        padding:
+            22px;
+    }
+}

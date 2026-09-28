@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NAZAM // ULTIMATE LAB</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="experiment.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND EFFECT -->
+    <div class="space-bg"></div>
+    <div class="red-glow"></div>
+
+    <!-- PARTICLES -->
+    <div class="particles">
+        <i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i>
+    </div>
+
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            NAZAM<span>.</span>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="biodata.html">BIODATA</a>
+            <a href="music.html">MUSIC</a>
+            <a href="funfacts.html">FUN FACTS</a>
+            <a href="random.html">RANDOM</a>
+            <a href="spiderman.html">SPIDER-MAN</a>
+            <a href="experiment.html" class="active">LAB</a>
+            <a href="os.html">NAZAM OS</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="lab-hero">
+
+            <div class="hero-status">
+                <span class="status-dot"></span>
+                SYSTEM ONLINE
+            </div>
+
+            <p class="lab-number">EXPERIMENT // 07</p>
+
+            <h1>
+                ULTIMATE
+                <span>LAB.</span>
+            </h1>
+
+            <p class="hero-description">
+                Eksperimen kecil untuk menguji kekuatan
+                <b>HTML</b>, <b>CSS</b>, dan <b>JavaScript</b>.
+            </p>
+
+            <div class="hero-line"></div>
+
+        </section>
+
+
+        <!-- MAIN LAB -->
+        <section class="lab-grid">
+
+
+            <!-- ================= HTML ================= -->
+            <article class="lab-card html-card">
+
+                <div class="card-top">
+                    <span>01</span>
+                    <span>STRUCTURE</span>
+                </div>
+
+                <div class="card-title">
+                    <small>EXPERIMENT</small>
+                    <h2>HTML</h2>
+                </div>
+
+
+                <!-- HOLOGRAM -->
+                <div class="hologram">
+
+                    <div class="holo-grid"></div>
+
+                    <div class="html-symbol">
+                        &lt;/&gt;
+                    </div>
+
+                    <div class="scan-beam"></div>
+
+                    <div class="holo-circle circle-one"></div>
+                    <div class="holo-circle circle-two"></div>
+
+                    <div class="holo-text">
+                        STRUCTURE
+                    </div>
+
+                </div>
+
+
+                <div class="card-info">
+
+                    <div>
+                        <span>STATUS</span>
+                        <strong id="htmlStatus">
+                            STANDBY
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>TYPE</span>
+                        <strong>MARKUP</strong>
+                    </div>
+
+                </div>
+
+
+                <button class="run-button html-run" onclick="runHTML()">
+                    <span>RUN EXPERIMENT</span>
+                    <b>→</b>
+                </button>
+
+
+                <div id="htmlResult" class="experiment-result">
+
+                    <div class="success-icon">
+                        ✓
+                    </div>
+
+                    <div>
+                        <strong>HTML SYSTEM ONLINE</strong>
+                        <small>Structure detected successfully.</small>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ================= CSS ================= -->
+            <article class="lab-card css-card">
+
+                <div class="card-top">
+                    <span>02</span>
+                    <span>VISUAL ENGINE</span>
+                </div>
+
+                <div class="card-title">
+                    <small>EXPERIMENT</small>
+                    <h2>CSS</h2>
+                </div>
+
+
+                <!-- REACTOR -->
+                <div class="reactor">
+
+                    <div class="reactor-ring ring-one"></div>
+                    <div class="reactor-ring ring-two"></div>
+                    <div class="reactor-ring ring-three"></div>
+
+                    <div class="energy-core">
+
+                        <div class="core-inner"></div>
+
+                        <span>CSS</span>
+
+                    </div>
+
+                    <div class="energy-particle p1"></div>
+                    <div class="energy-particle p2"></div>
+                    <div class="energy-particle p3"></div>
+                    <div class="energy-particle p4"></div>
+
+                </div>
+
+
+                <div class="energy-readout">
+
+                    <div>
+                        <span>ENERGY</span>
+                        <strong id="energyText">
+                            OFFLINE
+                        </strong>
+                    </div>
+
+                    <div class="energy-bar">
+                        <i id="energyBar"></i>
+                    </div>
+
+                </div>
+
+
+                <button class="run-button css-run" onclick="runCSS()">
+
+                    <span>ACTIVATE CORE</span>
+                    <b>⚡</b>
+
+                </button>
+
+
+                <div id="cssResult" class="experiment-result">
+
+                    <div class="success-icon">
+                        ⚡
+                    </div>
+
+                    <div>
+                        <strong>CSS CORE ACTIVATED</strong>
+                        <small>Visual engine running at maximum power.</small>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ================= JAVASCRIPT ================= -->
+            <article class="lab-card js-card">
+
+                <div class="card-top">
+                    <span>03</span>
+                    <span>INTERACTION</span>
+                </div>
+
+                <div class="card-title">
+                    <small>EXPERIMENT</small>
+                    <h2>JAVASCRIPT</h2>
+                </div>
+
+
+                <!-- TERMINAL -->
+                <div class="terminal-window">
+
+                    <div class="terminal-head">
+
+                        <div class="terminal-lights">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+
+                        <span>NAZAM_TERMINAL</span>
+
+                    </div>
+
+
+                    <div id="terminalBody" class="terminal-body">
+
+                        <div>&gt; waiting for command<span class="cursor">_</span></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="js-status">
+
+                    <span id="jsStatusDot"></span>
+
+                    <span id="jsStatus">
+                        SYSTEM STANDBY
+                    </span>
+
+                </div>
+
+
+                <button class="run-button js-run" onclick="runJS()">
+
+                    <span>BOOT JAVASCRIPT</span>
+                    <b>▶</b>
+
+                </button>
+
+
+                <div id="jsResult" class="experiment-result">
+
+                    <div class="success-icon">
+                        ✓
+                    </div>
+
+                    <div>
+                        <strong>JAVASCRIPT ONLINE</strong>
+                        <small>Interaction system ready.</small>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ================= SPIDER WEB ================= -->
+
+        <section class="spider-section">
+
+            <div class="web-lines"></div>
+
+            <div class="spider-symbol">
+                <span>✦</span>
+            </div>
+
+            <div class="spider-content">
+
+                <p>NAZAM // LABORATORY</p>
+
+                <h2>
+                    CREATE.
+                    <span>EXPERIMENT.</span>
+                    REPEAT.
+                </h2>
+
+                <div class="system-code">
+                    <span>HTML</span>
+                    <i></i>
+                    <span>CSS</span>
+                    <i></i>
+                    <span>JS</span>
+                    <i></i>
+                    <span>ONLINE</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="lab-footer">
+
+        <span>NAZAM LAB</span>
+
+        <span>EXPERIMENTAL SYSTEM // 2026</span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

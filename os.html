@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NAZAM OS</title>
+
+    <link rel="stylesheet" href="os.css">
+</head>
+
+<body>
+
+<div class="os">
+
+    <!-- ================= TOP BAR ================= -->
+
+    <header class="topbar">
+
+        <div class="logo">
+            NAZAM<span>.</span>
+        </div>
+
+        <div class="system-title">
+            NAZAM OS // PERSONAL SYSTEM
+        </div>
+
+        <a href="index.html" class="home-btn">
+            ← HOME
+        </a>
+
+        <div id="clock">
+            00:00:00
+        </div>
+
+    </header>
+
+
+    <!-- ================= HUD ================= -->
+
+    <div class="hud hud-left">
+
+        <span class="online-dot"></span>
+        SYSTEM ONLINE
+
+        <span>TKJ // CORE</span>
+
+        <span>SECURE CONNECTION</span>
+
+        <span>127.0.0.1</span>
+
+    </div>
+
+
+    <div class="hud hud-right">
+        NAZAM OS v1.0
+    </div>
+
+
+    <!-- ================= MAIN SYSTEM ================= -->
+
+    <main class="system">
+
+        <!-- ORBITS -->
+
+        <div class="orbit orbit-outer"></div>
+        <div class="orbit orbit-middle"></div>
+        <div class="orbit orbit-inner"></div>
+
+
+        <!-- CONNECTION LINES -->
+
+        <div class="connection connection-1"></div>
+        <div class="connection connection-2"></div>
+        <div class="connection connection-3"></div>
+        <div class="connection connection-4"></div>
+        <div class="connection connection-5"></div>
+
+
+        <!-- ================= CORE ================= -->
+
+        <button class="core" id="core" type="button">
+
+            <div class="core-ring ring-one"></div>
+            <div class="core-ring ring-two"></div>
+            <div class="core-ring ring-three"></div>
+
+            <div class="core-center">
+
+                <div class="core-icon">
+                    ✦
+                </div>
+
+                <div class="core-name">
+                    NAZAM
+                </div>
+
+                <div class="core-status">
+                    SYSTEM ONLINE
+                </div>
+
+            </div>
+
+        </button>
+
+
+        <!-- ================= NODES ================= -->
+
+        <button
+            class="node"
+            data-window="aboutWindow"
+            data-angle="-140"
+            type="button">
+
+            <div class="node-circle">
+                👤
+            </div>
+
+            <span>
+                ABOUT ME
+            </span>
+
+        </button>
+
+
+        <button
+            class="node"
+            data-window="musicWindow"
+            data-angle="-40"
+            type="button">
+
+            <div class="node-circle">
+                ♪
+            </div>
+
+            <span>
+                MUSIC
+            </span>
+
+        </button>
+
+
+        <button
+            class="node"
+            data-window="projectsWindow"
+            data-angle="140"
+            type="button">
+
+            <div class="node-circle">
+                💻
+            </div>
+
+            <span>
+                PROJECTS
+            </span>
+
+        </button>
+
+
+        <button
+            class="node"
+            data-window="arcadeWindow"
+            data-angle="40"
+            type="button">
+
+            <div class="node-circle">
+                🎮
+            </div>
+
+            <span>
+                ARCADE
+            </span>
+
+        </button>
+
+
+        <button
+            class="node"
+            data-window="terminalWindow"
+            data-angle="90"
+            type="button">
+
+            <div class="node-circle terminal-icon">
+                &gt;_
+            </div>
+
+            <span>
+                TERMINAL
+            </span>
+
+        </button>
+
+
+        <!-- ================= ABOUT WINDOW ================= -->
+
+        <section class="window" id="aboutWindow">
+
+            <div class="window-header">
+
+                <span>
+                    ABOUT ME
+                </span>
+
+                <button
+                    class="close"
+                    type="button">
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-body about-body">
+
+                <div class="about-title">
+                    NAZAM ROYIBA
+                </div>
+
+                <p>
+                    Pelajar SMKN 1 Jakarta yang tertarik
+                    dengan dunia IT, TKJ, website, game,
+                    dan berbagai hal baru.
+                </p>
+
+
+                <div class="about-grid">
+
+                    <div>
+                        <small>NAMA</small>
+                        <strong>Nazam Royiba</strong>
+                    </div>
+
+                    <div>
+                        <small>STATUS</small>
+                        <strong>PELAJAR</strong>
+                    </div>
+
+                    <div>
+                        <small>SEKOLAH</small>
+                        <strong>SMKN 1 JAKARTA</strong>
+                    </div>
+
+                    <div>
+                        <small>JURUSAN</small>
+                        <strong>TKJ</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MUSIC WINDOW ================= -->
+
+        <section class="window" id="musicWindow">
+
+            <div class="window-header">
+
+                <span>
+                    MUSIC SYSTEM
+                </span>
+
+                <button
+                    class="close"
+                    type="button">
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-body music-body">
+
+                <div class="disc">
+
+                    <div class="disc-center">
+                        ♪
+                    </div>
+
+                </div>
+
+
+                <h2>
+                    BANONDARI
+                </h2>
+
+                <p>
+                    AZMY Z
+                </p>
+
+
+                <div class="equalizer">
+
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+
+                </div>
+
+
+                <div class="music-player">
+
+                    <iframe
+                        id="youtubePlayer"
+                        title="Banondari - Azmy Z"
+                        allow="autoplay; encrypted-media; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECT WINDOW ================= -->
+
+        <section class="window" id="projectsWindow">
+
+            <div class="window-header">
+
+                <span>
+                    PROJECT DATABASE
+                </span>
+
+                <button
+                    class="close"
+                    type="button">
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-body">
+
+                <div class="project-list">
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <h3>
+                            WEBSITE
+                        </h3>
+
+                        <p>
+                            Website personal dengan
+                            desain dark Spider-Man style.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <h3>
+                            TKJ
+                        </h3>
+
+                        <p>
+                            Belajar jaringan komputer,
+                            hardware, Linux, dan sistem.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <h3>
+                            GAME
+                        </h3>
+
+                        <p>
+                            Eksperimen membuat game
+                            menggunakan Godot.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            04
+                        </div>
+
+                        <h3>
+                            EXPERIMENT
+                        </h3>
+
+                        <p>
+                            Mencoba berbagai eksperimen
+                            HTML, CSS, dan JavaScript.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ARCADE WINDOW ================= -->
+
+        <section class="window" id="arcadeWindow">
+
+            <div class="window-header">
+
+                <span>
+                    ARCADE // TARGET SYSTEM
+                </span>
+
+                <button
+                    class="close"
+                    type="button">
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-body arcade-body">
+
+                <div class="game-info">
+
+                    <div>
+                        SCORE
+                        <strong id="score">
+                            000
+                        </strong>
+                    </div>
+
+                    <div>
+                        TIME
+                        <strong id="gameTime">
+                            10
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="game-area"
+                    id="gameArea">
+
+                    <button
+                        id="target"
+                        class="target"
+                        type="button">
+                    </button>
+
+                    <div
+                        id="gameMessage"
+                        class="game-message">
+
+                        PRESS START
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="startGame"
+                    class="start-game"
+                    type="button">
+
+                    START GAME
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TERMINAL WINDOW ================= -->
+
+        <section class="window" id="terminalWindow">
+
+            <div class="window-header">
+
+                <span>
+                    TERMINAL
+                </span>
+
+                <button
+                    class="close"
+                    type="button">
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-body terminal-body">
+
+                <div
+                    id="terminalBody"
+                    class="terminal-screen">
+
+                    <div>
+                        NAZAM TERMINAL v1.0
+                    </div>
+
+                    <div>
+                        -------------------------
+                    </div>
+
+                    <div>
+                        Type a command...
+                    </div>
+
+                    <br>
+
+                    <div class="terminal-command">
+                        &gt; system_status
+                    </div>
+
+                    <div class="success">
+                        SYSTEM ONLINE ✓
+                    </div>
+
+                    <div>
+                        &gt; tkj_core
+                    </div>
+
+                    <div class="success">
+                        CORE ACTIVE ✓
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <div class="system-footer">
+
+        NAZAM OS
+        <span>•</span>
+        PERSONAL SYSTEM
+        <span>•</span>
+        2026
+
+    </div>
+
+</div>
+
+
+<script src="os.js"></script>
+
+</body>
+</html>

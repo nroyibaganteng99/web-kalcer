@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NAZAM // RANDOM</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="random.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            NAZAM<span>.</span>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="biodata.html">BIODATA</a>
+            <a href="music.html">MUSIC</a>
+            <a href="funfacts.html">FUN FACTS</a>
+            <a href="random.html" class="active">RANDOM</a>
+            <a href="spiderman.html">SPIDER-MAN</a>
+            <a href="experiment.html">LAB</a>
+            <a href="os.html">NAZAM OS</a>
+        </nav>
+
+    </header>
+
+
+    <main class="random-page">
+
+        <p class="random-label">NAZAM // RANDOM SYSTEM</p>
+
+        <h1>
+            RANDOM<span>.</span>
+        </h1>
+
+        <p class="random-description">
+            Tekan tombol di bawah dan biarkan sistem memilih sesuatu secara acak.
+        </p>
+
+
+        <section class="random-box">
+
+            <div class="random-number">
+                RANDOM FACT
+            </div>
+
+            <div id="randomFact">
+                Klik tombol GENERATE untuk memulai.
+            </div>
+
+            <button id="generateButton">
+                GENERATE
+                <span>↗</span>
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const facts = [
+                "Nazam suka menggambar 🎨",
+                "Nazam sedang belajar TKJ 💻",
+                "Nazam tertarik dengan dunia IT ⚡",
+                "Nazam suka mendengarkan musik 🎧",
+                "Nazam sedang belajar membuat website 🌐",
+                "Nazam tertarik membuat game 🎮",
+                "Nazam suka mencoba hal baru 🚀",
+                "Nazam menggunakan Fedora di laptop 🐧",
+                "Nazam suka musik yang tenang dan mellow 🎵"
+            ];
+
+            const button =
+                document.getElementById("generateButton");
+
+            const fact =
+                document.getElementById("randomFact");
+
+
+            button.addEventListener("click", function () {
+
+                const random =
+                    Math.floor(Math.random() * facts.length);
+
+                fact.classList.remove("random-show");
+
+                void fact.offsetWidth;
+
+                fact.textContent =
+                    facts[random];
+
+                fact.classList.add("random-show");
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>

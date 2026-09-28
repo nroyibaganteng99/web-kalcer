@@ -1,0 +1,458 @@
+/* =====================================================
+   BIODATA
+===================================================== */
+
+.biodata-page {
+
+    width:
+        min(1200px, calc(100% - 60px));
+
+    margin:
+        70px auto;
+}
+
+
+.biodata-title h1 {
+
+    font-size:
+        clamp(45px, 8vw, 90px);
+
+    letter-spacing:
+        -5px;
+}
+
+
+.biodata-title p {
+
+    color:
+        #aaa;
+
+    margin-top:
+        10px;
+}
+
+
+/* TABS */
+
+.tabs {
+
+    display:
+        flex;
+
+    gap:
+        8px;
+
+    overflow-x:
+        auto;
+
+    margin-top:
+        35px;
+
+    padding-bottom:
+        8px;
+
+    scrollbar-width:
+        none;
+}
+
+
+.tabs::-webkit-scrollbar {
+    display: none;
+}
+
+
+.tab {
+
+    flex-shrink:
+        0;
+
+    color:
+        #aaa;
+
+    background:
+        rgba(0,0,0,.45);
+
+    border:
+        1px solid
+        rgba(255,255,255,.15);
+
+    border-radius:
+        25px;
+
+    padding:
+        10px 16px;
+
+    font-size:
+        10px;
+
+    letter-spacing:
+        .5px;
+
+    cursor:
+        pointer;
+
+    transition:
+        .3s;
+}
+
+
+.tab span {
+
+    color:
+        #ff2020;
+
+    margin-right:
+        5px;
+}
+
+
+.tab:hover,
+.tab.active {
+
+    color:
+        white;
+
+    border-color:
+        #ff2020;
+
+    box-shadow:
+        0 0 12px
+        rgba(255,0,0,.15);
+}
+
+
+/* CONTENT */
+
+.content {
+
+    display:
+        none;
+
+    margin-top:
+        30px;
+}
+
+
+.content.active {
+
+    display:
+        block;
+
+    animation:
+        fadeIn .35s ease;
+}
+
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(10px);
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* PROFILE */
+
+.profile {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        50px;
+
+    padding:
+        35px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    border-radius:
+        25px;
+
+    background:
+        rgba(0,0,0,.55);
+
+    backdrop-filter:
+        blur(12px);
+}
+
+
+.profile img {
+
+    width:
+        280px;
+
+    aspect-ratio:
+        1 / 1;
+
+    object-fit:
+        cover;
+
+    border-radius:
+        20px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+}
+
+
+.profile-info {
+    flex: 1;
+}
+
+
+.profile-info h2 {
+
+    font-size:
+        clamp(30px, 5vw, 50px);
+
+    margin-bottom:
+        20px;
+}
+
+
+.bio-row {
+
+    display:
+        flex;
+
+    gap:
+        20px;
+
+    padding:
+        12px 0;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.08);
+}
+
+
+.bio-row strong {
+
+    width:
+        140px;
+
+    flex-shrink:
+        0;
+
+    color:
+        #ff3030;
+
+    font-size:
+        11px;
+}
+
+
+.bio-row span {
+
+    color:
+        #ddd;
+
+    font-size:
+        13px;
+}
+
+
+/* INFO LIST */
+
+.info-list {
+
+    display:
+        grid;
+
+    gap:
+        12px;
+}
+
+
+.info-item {
+
+    display:
+        flex;
+
+    gap:
+        20px;
+
+    align-items:
+        center;
+
+    padding:
+        22px;
+
+    background:
+        rgba(0,0,0,.55);
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    border-radius:
+        15px;
+}
+
+
+.info-item > span {
+
+    color:
+        #ff2020;
+
+    font-size:
+        12px;
+}
+
+
+.info-item h3 {
+    font-size:
+        18px;
+}
+
+
+.info-item p {
+
+    color:
+        #888;
+
+    margin-top:
+        5px;
+}
+
+
+/* GRID */
+
+.simple-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        15px;
+}
+
+
+.simple-grid h3 {
+
+    color:
+        white;
+
+    font-size:
+        16px;
+
+    margin-bottom:
+        10px;
+}
+
+
+.simple-grid p {
+
+    color:
+        #999;
+
+    line-height:
+        1.6;
+
+    font-size:
+        13px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .biodata-page {
+
+        width:
+            calc(100% - 24px);
+
+        margin:
+            45px auto;
+    }
+
+
+    .profile {
+
+        flex-direction:
+            column;
+
+        padding:
+            20px;
+
+        gap:
+            25px;
+
+        align-items:
+            stretch;
+    }
+
+
+    .profile img {
+
+        width:
+            min(100%, 270px);
+
+        margin:
+            auto;
+    }
+
+
+    .profile-info h2 {
+
+        text-align:
+            center;
+    }
+
+
+    .bio-row {
+
+        gap:
+            10px;
+    }
+
+
+    .bio-row strong {
+
+        width:
+            95px;
+
+        font-size:
+            9px;
+    }
+
+
+    .bio-row span {
+
+        font-size:
+            11px;
+    }
+
+
+    .simple-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+}
